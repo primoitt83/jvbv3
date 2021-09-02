@@ -7,7 +7,7 @@ services:
         restart: always
         ports:
             - '10000:10000/udp'
-            - '4443:4443'
+            - '443:443'
             - '8081:8080'
             - '9090:9090'
             - '4096:4096/udp'
@@ -25,8 +25,8 @@ services:
             - JVB_BREWERY_MUC=jvbbrewery
             - JVB_PORT=10000
             - JVB_TCP_HARVESTER_DISABLED=false
-            - JVB_TCP_PORT=4443
-            - JVB_TCP_MAPPED_PORT=4443
+            - JVB_TCP_PORT=443
+            - JVB_TCP_MAPPED_PORT=443
             - JVB_STUN_SERVERS=
             - JVB_ENABLE_APIS=rest,xmpp
             - JVB_WS_DOMAIN=chama-homologacao.serpro.gov.br:443
